@@ -1,0 +1,33 @@
+<!<!DOCTYPE html>
+<html ng-app="mainModule">
+    <head>
+        <meta charset="utf-8">
+        <title>Hola mundo con Angularjs</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
+        <script>
+    angular.module("mainModule",[])
+        .controller("FirtsController",["$scope", function(m){
+                m.nombre="juan"; 
+                /*setTimeout(function(){
+                    m.$apply(function(){
+                    m.nombre = "Juan Pabon";
+                    console.log(m.nombre);
+                    });                   
+                },2000); */     
+                document.querySelector("#mi_boton").addEventListener("click", function(){
+                m.$apply(function(){
+                    m.nombre = "Juan Pabon";
+                    console.log(m.nombre);
+                    });                       
+                });   
+            }]);
+        </script>
+    </head> 
+<body ng-controller="FirtsController">
+
+        <h1> {{ nombre }}</h1>
+        <button id="mi_boton">haz click </button>
+   
+        
+</body> 
+</html>

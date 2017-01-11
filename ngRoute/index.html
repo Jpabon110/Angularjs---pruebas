@@ -1,0 +1,36 @@
+<!<!DOCTYPE html>
+<html ng-app="CustomeDirective">
+    <head>
+        <meta charset="utf-8">
+        <title>Hola mundo con Angularjs</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
+        <script src="//code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.angularjs.org/1.6.1/angular-route.min.js"></script>
+        <script src="autocomplete-jquery-ui.js" ></script>
+        <script src="app.js"></script>
+        <script src="directives.js"></script>
+        <script src="controllers.js"></script>
+        <style>
+            .circular{
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+            }
+
+            .no-list li{
+                list-style-type: none;
+            }
+            body,html{
+                text-align: center;
+                background-color: #eee;
+                margin: 0px;
+            }
+        </style>
+    </head> 
+<body>
+<div ng-view>
+    
+</div>
+</body> 
+</html>

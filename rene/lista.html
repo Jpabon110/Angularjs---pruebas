@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="list">
+<head >
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="angular.min.js"></script>
+	<script src="angular-local-storage-master/dist/angular-local-storage.min.js"></script>
+	<script src="lista.js"></script>
+	
+</head>
+<body>
+	<div ng-controller="Tlist">
+		<ul>
+			<li ng-repeat="acti in lista">
+				{{ acti.descripcion }} -
+				{{ acti.fecha }}
+			</li>
+		</ul>
+<input type="text" ng-model="nombre">
+		<form>
+			<input type="text" ng-model="nuevaLista.descripcion">
+			<input type="datetine-local" ng-model="nuevaLista.fecha">
+		</form>
+	</div>
+</body>
+</html>
