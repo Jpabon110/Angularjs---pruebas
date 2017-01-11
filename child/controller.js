@@ -1,4 +1,4 @@
-angular.module("MyFirstApp",[])
+angular.module("MyFirstApp",['ngMaterial'])
 
 .run(function($rootScope){
      $rootScope.nombre = "Juan Pabon";   

@@ -18,11 +18,16 @@ angular.module("ToDoList",["LocalStorageModule"])
     toDoService.updaLocalStorage = function(){
         l.set(toDoService.key, toDoService.activities);
     };
+    
 
     toDoService.clean = function(){
         toDoService.activities = [];
         toDoService.updaLocalStorage();
         return toDoService.getAll();
+    };
+
+     toDoService.hola = function(){
+        return toDoService.decir = "hola";       
     };
 
     toDoService.getAll = function(){
@@ -54,6 +59,7 @@ function(m,ToDoService){
 
     m.removeActv = function(item){
        m.todo = ToDoService.removeItem(item);
+      console.log(ToDoService.hola()); 
     }
 
     m.clean = function(){

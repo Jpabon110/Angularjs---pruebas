@@ -1,6 +1,6 @@
 angular.module("MyFirstApp",[])
-
-.controller("MyFirstController",["$scope","$http",function(scope,http){
+.controller("MyFirstController",["$scope","$http",
+"Loading",function(scope,http,load){
   scope.posts = [];
   scope.newposts = {};
   scope.loading = true;
@@ -10,7 +10,9 @@ angular.module("MyFirstApp",[])
       console.log("success call back");
       console.log(data['data']);
       scope.posts = data['data'];
-      scope.loading = false;
+      scope.loading = load.cambiar();
+      console.log("aqui estassss"+load.cambiar());
+
   }) .catch(function(error) {
     console.log("Error call back");
     scope.loading = false;
