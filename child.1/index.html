@@ -2,22 +2,25 @@
 <html ng-app="MyFirstApp">
     <head>
 
+      <link href="archivo.css" rel="stylesheet">
+
     <!--Materialize-->
      <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
        <!--Import jQuery before materialize.js-->
-      <script  src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script  src="bower_components/materialize/js/materialize.min.js"></script>
+      <!--<script  src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+        <script src="//code.jquery.com/jquery-latest.min.js"></script>              
+        <script  src="bower_components/materialize/js/materialize.min.js"></script>
 
 
         <title>Hola mundo con Angularjs</title>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
-        <script src="//code.jquery.com/jquery-latest.min.js"></script>        
         <script src="https://code.angularjs.org/1.6.1/angular-route.min.js"></script>       
         <script src="controller.js"></script>
         <script src="angular-local-storage.min.js"></script>
@@ -29,16 +32,9 @@
         </script>
 
     </head> 
-<body ng-controller="MyFirstController">
-    <!--{{nombre}}
-    <p><strong>Valor del padre: </strong> {{$parent.nombre}} </p>
-   
 
-    <a class="waves-effect waves-light btn">button</a>
-    <div ng-controller="ChildController">
-        <p><strong>Valor del hijo: </strong> {{nombre}} </p>
-        <input type="text" ng-model="$parent.nombre">        
-    </div>-->
+   <header>
+  
 
     <nav>
     <div class="nav-wrapper">
@@ -57,9 +53,26 @@
         <li><a href="mobile.html">Mobile</a></li>
       </ul>
     </div>
-  </nav>
+  </nav>  
+  </header>
+   <main>
+     
+   
+<body ng-controller="MyFirstController">
+    <!--{{nombre}}
+    <p><strong>Valor del padre: </strong> {{$parent.nombre}} </p>
+   
 
-   <footer class="page-footer">
+    <a class="waves-effect waves-light btn">button</a>
+    <div ng-controller="ChildController">
+        <p><strong>Valor del hijo: </strong> {{nombre}} </p>
+        <input type="text" ng-model="$parent.nombre">        
+    </div>-->
+
+    
+</body> 
+</main>
+<footer class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -84,6 +97,4 @@
             </div>
           </div>
         </footer>
-    
-</body> 
 </html>

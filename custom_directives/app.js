@@ -33,9 +33,6 @@ angular.module("CustomeDirective",[])
 
     }
 })
-/*
-<!--style="background:url({{repo.owner.avatar_url}}); background-position: center; background-size: cover; "-->
-*/
 
 .controller("AppCtrl",["$scope","$http",function(m,h){
     m.repos = [];
