@@ -1,9 +1,19 @@
 angular.module("PaginaDirective")
-.controller("MostrarController",["$scope",function(m){
+.controller("MostrarController",["$scope","$http",function(m,h){
     m.nombre="Asbel Lanth";
     m.titulo = "Royal knight";
-    m.img = "http://vignette3.wikia.nocookie.net/aselia/images/f/f2/Asbel_Cut-in_(ToG).png/revision/latest?cb=20141014052741";
+    m.img = "img/asbel.png";
     m.mysticArts = "Mystic Arts";
+
+    
+
+    h.get("http://localhost:8080/pruebas_angularjs/hola_mundo/pagina/personajes.json")
+    .then(function(data){
+        m.contenidos = data['data'];
+        console.log(m.contenidos);
+    }).catch(function(error){
+        console.log("HAY UN ERROR");        
+    });
 
         m.skills = [  
                         {
@@ -18,8 +28,6 @@ angular.module("PaginaDirective")
                           {
                         nombre: "Divine Conqueror"
                         }
-                    ]; 
-
-              console.log(m.skills);                     
+                    ];                   
 
 }]);

@@ -1,0 +1,14 @@
+[  
+        {
+        "nombre": "Asbel Lanth",
+        "titulo": "Royal knight",
+        "img": "img/asbel.png",
+        "mysticArts": "Mystic Arts",
+        "skills": [                
+                   {"value": "Stampede Strike"},
+                   {"value": "Lunar Requiem"},                       
+                   {"value": "Expunging Sword"},                
+                   {"value": "Divine Conqueror"}                   
+                ]
+        }       
+ ]
