@@ -13,15 +13,15 @@
         },
 
          {
-        "nombre": "Asbel Lanth",
-        "titulo": "Royal knight",
-        "img": "img/asbel.png",
+        "nombre": "Cheria Barnes",
+        "titulo": "Royal Made",
+        "img": "img/cheria.png",
         "mysticArts": "Mystic Arts",
         "skills": [                
-                   {"value": "Stampede Strike"},
-                   {"value": "Lunar Requiem"},                       
-                   {"value": "Expunging Sword"},                
-                   {"value": "Divine Conqueror"}                   
+                   {"value": "Asterism Line"},
+                   {"value": "Garden of Innocence"},                       
+                   {"value": "Punishing Blossom"},                
+                   {"value": "Trillion Drive"}                   
                 ]
         }        
  ]
