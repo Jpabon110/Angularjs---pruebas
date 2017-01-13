@@ -22,9 +22,9 @@ angular.module("MyFirstApp",[])
      })
      .then(function(data,status,headers,config){
          console.log("success call back for the post");
-         console.log(scope.newPosts);
-         scope.posts.unshift(scope.newPosts)
-         scope.newPosts = {};
+         console.log(scope.newposts);
+         scope.posts.unshift(scope.newposts)
+         scope.newposts = {};
      })
      .catch(function(error,status,headers,config){
          console.log("Error call back");   

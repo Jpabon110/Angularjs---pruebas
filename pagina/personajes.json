@@ -1,8 +1,8 @@
 [  
         {
-        "nombre": "Asbel Lanth",
+        "nombre": "Asbel Lhant",
         "titulo": "Royal knight",
-        "img": "img/asbel.png",
+        "img": "asbel.png",
         "mysticArts": "Mystic Arts",
         "skills": [                
                    {"value": "Stampede Strike"},
@@ -15,7 +15,7 @@
          {
         "nombre": "Cheria Barnes",
         "titulo": "Royal Made",
-        "img": "img/cheria.png",
+        "img": "asbel.png",
         "mysticArts": "Mystic Arts",
         "skills": [                
                    {"value": "Asterism Line"},
@@ -23,5 +23,83 @@
                    {"value": "Punishing Blossom"},                
                    {"value": "Trillion Drive"}                   
                 ]
-        }        
+        },
+
+         {
+        "nombre": "Sophie",
+        "titulo": "Humanoid",
+        "img": "asbel.png",
+        "mysticArts": "Mystic Arts",
+        "skills": [                
+                   {"value": "Critical Blade"},
+                   {"value": "Infinitia Soul"},                       
+                   {"value": "Zero Dissolver"},                
+                   {"value": "Fire Dragon Rampage"},                   
+                   {"value": "Shadow Moment"}                   
+                ]
+        },
+
+         {
+        "nombre": "Hubert Oswell",
+        "titulo": "Major of Strahta's Military",
+        "img": "asbel.png",
+        "mysticArts": "Mystic Arts",
+        "skills": [                
+                   {"value": "Broadside Waltz"},
+                   {"value": "Tempest Arrow"},                       
+                   {"value": "Expiation"},                
+                   {"value": "No Quarter"}                   
+                ]
+        } ,{
+        "nombre": "Asbel Lhant",
+        "titulo": "Royal knight",
+        "img": "asbel.png",
+        "mysticArts": "Mystic Arts",
+        "skills": [                
+                   {"value": "Stampede Strike"},
+                   {"value": "Lunar Requiem"},                       
+                   {"value": "Expunging Sword"},                
+                   {"value": "Divine Conqueror"}                   
+                ]
+        },
+
+         {
+        "nombre": "Cheria Barnes",
+        "titulo": "Royal Made",
+        "img": "asbel.png",
+        "mysticArts": "Mystic Arts",
+        "skills": [                
+                   {"value": "Asterism Line"},
+                   {"value": "Garden of Innocence"},                       
+                   {"value": "Punishing Blossom"},                
+                   {"value": "Trillion Drive"}                   
+                ]
+        },
+
+         {
+        "nombre": "Sophie",
+        "titulo": "Humanoid",
+        "img": "asbel.png",
+        "mysticArts": "Mystic Arts",
+        "skills": [                
+                   {"value": "Critical Blade"},
+                   {"value": "Infinitia Soul"},                       
+                   {"value": "Zero Dissolver"},                
+                   {"value": "Fire Dragon Rampage"},                   
+                   {"value": "Shadow Moment"}                   
+                ]
+        },
+
+         {
+        "nombre": "Hubert Oswell",
+        "titulo": "Major of Strahta's Military",
+        "img": "asbel.png",
+        "mysticArts": "Mystic Arts",
+        "skills": [                
+                   {"value": "Broadside Waltz"},
+                   {"value": "Tempest Arrow"},                       
+                   {"value": "Expiation"},                
+                   {"value": "No Quarter"}                   
+                ]
+        }                 
  ]
