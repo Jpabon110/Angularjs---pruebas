@@ -18,7 +18,10 @@
     <ul>
         <li ng-repeat="comentario in comentarios">
             {{comentario.comentario}} -
-             <strong>{{comentario.username}}</strong>
+             <strong>{{comentario.username}}</strong> -
+             <li ng-repeat="comen in comentario.hola">
+             <strong>{{comen.d}}</strong>
+             </li>
         </li>
 
     </ul>

@@ -3,7 +3,11 @@ angular.module("MyFirstApp",[])
 
 .controller("MyFirstController",["$scope",function(m){
     m.nombre = "Juan";
-    m.Nuevocomentario = { comentario:"", username:""};
+    m.Nuevocomentario = { comentario:"", username:"",
+     hola:[
+          {d:"asdas"} 
+         ]
+        };
     m.comentarios= [
         {
             comentario:"Buen Tutorial",
@@ -16,6 +20,7 @@ angular.module("MyFirstApp",[])
     ];
     m.agregarComentario = function(){
      m.comentarios.push(m.Nuevocomentario);
+     console.log(m.comentarios);
      m.Nuevocomentario ={};
     }
 }]);

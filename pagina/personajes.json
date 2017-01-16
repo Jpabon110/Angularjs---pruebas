@@ -1,10 +1,11 @@
 [  
         {
+        "id": 1,
         "nombre": "Asbel Lhant",
         "titulo": "Royal knight",
-        "img": "asbel.png",
+        "img": "hubert.png",
         "mysticArts": "Mystic Arts",
-        "skills": [                
+        "Skill": [                
                    {"value": "Stampede Strike"},
                    {"value": "Lunar Requiem"},                       
                    {"value": "Expunging Sword"},                
@@ -13,11 +14,12 @@
         },
 
          {
+        "id": 2,
         "nombre": "Cheria Barnes",
         "titulo": "Royal Made",
-        "img": "asbel.png",
+        "img": "hubert.png",
         "mysticArts": "Mystic Arts",
-        "skills": [                
+        "Skill": [                
                    {"value": "Asterism Line"},
                    {"value": "Garden of Innocence"},                       
                    {"value": "Punishing Blossom"},                
@@ -28,9 +30,9 @@
          {
         "nombre": "Sophie",
         "titulo": "Humanoid",
-        "img": "asbel.png",
+        "img": "hubert.png",
         "mysticArts": "Mystic Arts",
-        "skills": [                
+        "Skill": [                
                    {"value": "Critical Blade"},
                    {"value": "Infinitia Soul"},                       
                    {"value": "Zero Dissolver"},                
@@ -42,9 +44,9 @@
          {
         "nombre": "Hubert Oswell",
         "titulo": "Major of Strahta's Military",
-        "img": "asbel.png",
+        "img": "hubert.png",
         "mysticArts": "Mystic Arts",
-        "skills": [                
+        "Skill": [                
                    {"value": "Broadside Waltz"},
                    {"value": "Tempest Arrow"},                       
                    {"value": "Expiation"},                
@@ -53,9 +55,9 @@
         } ,{
         "nombre": "Asbel Lhant",
         "titulo": "Royal knight",
-        "img": "asbel.png",
+        "img": "hubert.png",
         "mysticArts": "Mystic Arts",
-        "skills": [                
+        "Skill": [                
                    {"value": "Stampede Strike"},
                    {"value": "Lunar Requiem"},                       
                    {"value": "Expunging Sword"},                
@@ -68,7 +70,7 @@
         "titulo": "Royal Made",
         "img": "asbel.png",
         "mysticArts": "Mystic Arts",
-        "skills": [                
+        "Skill": [                
                    {"value": "Asterism Line"},
                    {"value": "Garden of Innocence"},                       
                    {"value": "Punishing Blossom"},                
@@ -81,7 +83,7 @@
         "titulo": "Humanoid",
         "img": "asbel.png",
         "mysticArts": "Mystic Arts",
-        "skills": [                
+        "Skill": [                
                    {"value": "Critical Blade"},
                    {"value": "Infinitia Soul"},                       
                    {"value": "Zero Dissolver"},                
@@ -95,7 +97,7 @@
         "titulo": "Major of Strahta's Military",
         "img": "asbel.png",
         "mysticArts": "Mystic Arts",
-        "skills": [                
+        "Skill": [                
                    {"value": "Broadside Waltz"},
                    {"value": "Tempest Arrow"},                       
                    {"value": "Expiation"},                
