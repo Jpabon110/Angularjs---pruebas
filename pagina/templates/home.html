@@ -2,7 +2,9 @@
     <body ng-controller="MostrarController">
 <div class="container">
     <!-- Modal Trigger -->
-  <a class="btn-floating btn-large waves-effect waves-light indigo lighten-1" href="#modal1"><i class="material-icons">add</i></a>
+  <!--<a class="btn-floating btn-large waves-effect waves-light indigo lighten-1" href="#modal1"><i class="material-icons">add</i></a>-->
+   <button class="btn-floating btn-large waves-effect waves-light indigo lighten-1" data-target="modal1" class="btn">
+     <i class="material-icons">add</i></button>
 
         <!-- Modal Structure -->
         <div id="modal1" class="modal modal-fixed-footer">
@@ -136,8 +138,16 @@
                   </a>                                 
                   </span>
                 <p><a href="#">{{ contenido.titulo}}</a></p>
+                <span class="card-title activator grey-text text-darken-4 ">                 
                  <!-- Modal Trigger editar -->
-                   <a ng-click="editar(contenido)" class="btn-floating btn-large waves-effect waves-light indigo lighten-1" href="#modal2"><i class="material-icons">add</i></a>
+                  <!--<a ng-click="editar(contenido)" class="btn-floating btn-large waves-effect waves-light indigo lighten-1" href="#modal2"><i class="material-icons">add</i></a>-->
+                  <button ng-click="editar(contenido)" class="btn-floating btn-small waves-effect waves-light indigo lighten-1" data-target="modal2" class="btn">
+                    <i class="material-icons">add</i>
+                    </button>
+                    <button ng-click="removePost(contenido)" class="btn-floating btn-small waves-effect waves-light red darken-1" class="btn">
+                    <i class="material-icons right">close</i>
+                  </button>
+                 </span> 
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">{{ ma }}<i class="material-icons right">close</i></span>

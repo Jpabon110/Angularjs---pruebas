@@ -1,19 +1,17 @@
-angular.module("PaginaDirective",['ngRoute'])
+angular.module("PaginaDirective",['ngRoute','ngResource','ngCookies'])
 .config(["$routeProvider","$locationProvider",function(route,location){
+    
     location.hashPrefix('');
     route
         .when('/',{
-            restrict: 'E',
+
             controller: 'MostrarController',
             templateUrl: 'templates/home.html'
-        }).when('/modal1',{
-            restrict: 'E',
+        })
+        .when('/characters/',{
+
             controller: 'MostrarController',
-            templateUrl: 'templates/home.html'
-        }).when('/!',{
-            restrict: 'E',
-            controller: 'MostrarController',
-            templateUrl: 'templates/home.html'
+            templateUrl: 'templates/characters.html'
         });
 
 }]);

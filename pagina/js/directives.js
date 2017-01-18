@@ -3,6 +3,7 @@ angular.module("PaginaDirective")
 .directive("header",[function(){
     return{
         restrict: 'E',
+        controller: 'MostrarController',
         templateUrl: 'templates/heads.html'
     };
 }])

@@ -23,21 +23,42 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
         <script src="https://code.angularjs.org/1.6.1/angular-route.min.js"></script>
         <script src="https://code.angularjs.org/1.6.1/angular-resource.min.js"></script>
+        <script src="https://code.angularjs.org/1.6.1/angular-cookies.js"> </script>
+        
+
         <script src="app.js"></script>
         <script src="js/directives.js"></script>
-        <script src="controllers.js"></script>
+        <script src="js/googleLogin.js"></script>
         <script src="services.js"></script>
+        <script src="controllers.js"></script>        
         <script  src="bower_components/materialize/js/materialize.min.js"></script>
+        
                      
     </head> 
 
   <header>
     <heads></heads>
-</header>   
-     
-<div ng-view>
-  
-</div>
+</header>
+
+     <div class="parallax-container">
+      <div class="parallax"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/58/97/e95897efa78c61a9cc013e69b52c0638.jpg"></div>
+    </div>
+
+    <div ng-view>
+    
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/58/97/e95897efa78c61a9cc013e69b52c0638.jpg"></div>
+    <div class="parallax"><img src="images/parallax2.jpg"></div>
+  </div>
+
+    <script>
+        $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+         
+    </script>
 <!--<home></home>-->
 
 <foots></foots>  
