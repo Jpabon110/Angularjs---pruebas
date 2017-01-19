@@ -2,8 +2,8 @@ angular.module("PaginaDirective")
 
 
 .controller("MostrarController",
-["$scope","$http","$timeout","$cookieStore",
-function(m,h,time,cook){
+["$scope","$http","$timeout","$cookieStore","authFact",
+function(m,h,time,cook,auth){
     m.posts = [];
     m.newposts = {}; 
     m.editposts = {};
@@ -12,46 +12,70 @@ function(m,h,time,cook){
     m.Skill = [ ];
     m.params = {};
     var username = {};
+    var session ={};
+    var aux = {};
 
     m.gmail = {
         username : "",
         email: ""
     };
 
+    if(cook.get("session")){
+        console.log("session activa");
+    session = cook.get("session");
+     setTimeout(function(){                                
+            m.gmail.username =session['displayName'];
+            m.gmail.gimg = session['image']['url'];
+            m.$apply();                                                                                                                                        
+        },10);
+    }
+    
+
     m.endSession = function(){
         m.gmail = time(m.gmail,100);
-        cook.remove("userObj");  
+        cook.remove("session");  
+        gapi.auth.signOut(m.params);
     }
 
     m.onGoogleLogin = function(){
+         
         m.params = {
                 'clientid': '159835691626-u283aqh40jhk7ivu2r3qvsecgdl8d3ib.apps.googleusercontent.com',
                 'cookiepolicy': 'single_host_origin',
                 'callback': function(result){
+                    
                         if(result['status']['signed_in']){
                             var request = gapi.client.plus.people.get(
                                 {
                                     'userId': 'me'
                                 }
+                                
                             );
-                            request.execute(function(resp){
-                                m.$apply(function(){
-                                    m.gmail.username = resp.displayName;
-                                    m.gmail.email = resp.emails[0].value;
-                                    m.gmail.gimg = resp.image.url;
-                                                                     
+                            request.execute(function(resp){  
+
+                                cook.put("session", resp);  
+                                console.log(cook.get("session"));
+                                session =  cook.get("session");                                    
+                            //    var accessToken =  result['access_token'];
+                            //    console.log(accessToken);
+                            //    auth.setAccessToken(accessToken);
+
+                                m.$apply(function(){                                
+                                    m.gmail.username =session['displayName'];
+                                    m.gmail.gimg = session['image']['url'];                                                                                                                                        
                                 });
+
                             });
+
+                        }else{
+                            console.log("user canceled the session");
                         }
                 },
                 'approvalpromt': 'force',
                 'scope': 'https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.profile.emails.read'
                 };
-                cook.put("username", m.params);  
-                username = cook.get("username");
-                console.log(username);  
-             
-            gapi.auth.signIn(username);   
+            gapi.auth.signIn( m.params);
+                       
     }
 
 
