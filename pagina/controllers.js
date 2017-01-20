@@ -55,11 +55,8 @@ function(m,h,time,cook,auth){
 
                                 cook.put("session", resp);  
                                 console.log(cook.get("session"));
-                                session =  cook.get("session");                                    
-                            //    var accessToken =  result['access_token'];
-                            //    console.log(accessToken);
-                            //    auth.setAccessToken(accessToken);
-
+                                session =  cook.get("session");
+                                                                    
                                 m.$apply(function(){                                
                                     m.gmail.username =session['displayName'];
                                     m.gmail.gimg = session['image']['url'];                                                                                                                                        
@@ -71,7 +68,7 @@ function(m,h,time,cook,auth){
                             console.log("user canceled the session");
                         }
                 },
-                'approvalpromt': 'force',
+                'approvalprompt': 'force',
                 'scope': 'https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.profile.emails.read'
                 };
             gapi.auth.signIn( m.params);
